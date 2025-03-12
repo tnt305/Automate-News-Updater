@@ -1,30 +1,26 @@
-[project]
+[tool.poetry]
 name = "news-crawler"
 version = "0.1.0"
 description = "Crawl and summarize news from Twitter and LinkedIn"
-authors = [
-    {name = "tnt305",email = "thiendc3005@gmail.com"}
-]
-packages = [{ include = "news_crawler" }]
-license = {text = "MIT"}
+authors = ["tnt305 <thiendc3005@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.10,<4.0"
-dependencies = [
-    "pandas (>=2.2.3,<3.0.0)",
-    "numpy (>=2.0)",
-    "tqdm (>=4.67.1,<5.0.0)",
-    "transformers (>=4.49.0,<5.0.0)",
-    "scrapy (>=2.12.0,<3.0.0)",
-    "opencv-python (>=4.11.0.86,<5.0.0.0)",
-    "loguru (>=0.7.3,<0.8.0)",
-    "accelerate (==0.29.0)",
-    "pydantic (>=2.10.6,<3.0.0)",
-    "selenium (>=4.29.0,<5.0.0)",
-    "webdriver-manager (>=4.0.2,<5.0.0)",
-    "twikit (>=2.3.3,<3.0.0)"
-]
+packages = [{ include = "news_crawler" }]
 
-[tool.poetry]
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pandas = "^2.2.3"
+numpy = "^2.0"
+tqdm = "^4.67.1"
+transformers = "^4.49.0"
+scrapy = "^2.12.0"
+opencv-python = "^4.11.0.86"
+loguru = { version = "^0.7.3", allow-prereleases = true }
+accelerate = "0.29.0"
+pydantic = "^2.10.6"
+selenium = "^4.29.0"
+webdriver-manager = "^4.0.2"
+twikit = "^2.3.3"
 
 [tool.poetry.group.dev.dependencies]
 tqdm = "^4.67.1"
@@ -40,28 +36,21 @@ selenium = "^4.29.0"
 webdriver-manager = "^4.0.2"
 twikit = "^2.3.3"
 
-
-
 [[tool.poetry.source]]
 name = "torch"
 url = "https://download.pytorch.org/whl/cu126"
 priority = "supplemental"
-
 
 [[tool.poetry.source]]
 name = "torchvision"
 url = "https://download.pytorch.org/whl/cu126"
 priority = "supplemental"
 
-
 [[tool.poetry.source]]
 name = "torchaudio"
 url = "https://download.pytorch.org/whl/cu126"
 priority = "supplemental"
 
-
-[tool.poetry.dependencies]
-loguru = {allow-prereleases = true}
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
