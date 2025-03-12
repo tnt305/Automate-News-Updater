@@ -1,0 +1,1 @@
+source /home/thiendc/projects/myreader/.venv/bin/activate

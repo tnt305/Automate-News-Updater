@@ -1,0 +1,33 @@
+firecrawl:
+  project_name: "news-crawler"
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+  max_depth: 3
+  max_pages: 100
+  request_delay: 1  # seconds between requests
+  follow_links: true
+  save_format: "json"
+  output_path: "./data"
+  log_level: "info"
+
+targets:
+  - name: "Twitter News"
+    url: "https://twitter.com/search?q=news"
+    selectors:
+      title: "meta[property='og:title']"
+      content: "meta[property='og:description']"
+      date: "meta[property='article:published_time']"
+
+  - name: "LinkedIn News"
+    url: "https://www.linkedin.com/news"
+    selectors:
+      title: "h2.news-title"
+      content: "div.article-content"
+      date: "span.publish-date"
+
+proxy:
+  enabled: false
+  list: []
+
+headers:
+  Accept-Language: "en-US,en;q=0.9"
+  Cache-Control: "no-cache"

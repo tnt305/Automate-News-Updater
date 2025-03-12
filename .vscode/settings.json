@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true, // Format code tự động khi lưu
+    "python.formatting.provider": "black", // Dùng Black để format code
+    "python.linting.enabled": "true", // Bật linting
+    "python.linting.flake8Enabled": "true", // Sử dụng Flake8 để lint code
+    "python.linting.mypyEnabled": "true", // Kiểm tra type hint với MyPy
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    }
+}
