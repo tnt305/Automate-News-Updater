@@ -21,6 +21,11 @@ pydantic = "^2.10.6"
 selenium = "^4.29.0"
 webdriver-manager = "^4.0.2"
 twikit = "^2.3.3"
+crawlee = {extras = ["playwright"], version = "^0.6.3"}
+linkedin-api = "^2.3.1"
+bs4 = "^0.0.2"
+lxml = "^5.3.1"
+beautifulsoup4 = "^4.13.3"
 
 [tool.poetry.group.dev.dependencies]
 tqdm = "^4.67.1"
@@ -35,6 +40,8 @@ ipykernel = "^6.29.5"
 selenium = "^4.29.0"
 webdriver-manager = "^4.0.2"
 twikit = "^2.3.3"
+crawlee = {extras = ["playwright"], version = "^0.6.3"}
+bs4 = "^0.0.2"
 
 [[tool.poetry.source]]
 name = "torch"
