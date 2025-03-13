@@ -42,6 +42,7 @@ Run the scraper:
 ```python scraper.py```
 
 ##  Project Structure
+```
 /base_project
 │── llm_services           # Xử lý NLP, dùng OpenRouter & Gemini
 │   ├── __init__.py
@@ -72,7 +73,7 @@ Run the scraper:
 │── docker-compose.yml     # Chạy Kafka, Prometheus, Grafana bằng Docker
 │── requirements.txt
 │── README.m
-
+```
 ## Usage
 
 Modify the scraper settings in config.py to adjust scraping intervals and filters.
