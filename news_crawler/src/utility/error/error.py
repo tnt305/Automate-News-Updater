@@ -25,8 +25,20 @@ class ConfigFormatterMisMatchError(BaseError):
                  message='Expected DictConfig format for OmegaConf for config file'):
         super().__init__(error_root, message)   
 
-# class ConfigError(BaseError):
-#     pass
+class RequestConnectionError(BaseError):
+    def __init__(self,
+                 error_root='config_yaml',
+                 message='Expected DictConfig format for OmegaConf for config file'):
+        super().__init__(error_root, message)
+
+
+class FrequencyMismatchError(BaseError):
+    def __init__(self,
+                 error_root='config_yaml',
+                 message='Expected search date in list [daily, monthly, weekly]',
+                 *args):
+        super().__init__(error_root, message, *args)
+
 # class ConfigError(BaseError):
 #     pass
 # class ConfigError(BaseError):

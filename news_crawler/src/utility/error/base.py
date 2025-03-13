@@ -14,7 +14,7 @@ class BaseError(Exception):
         self.error_root = error_root
         self.message = message
         
-        error_message = f"Error with {error_root} | {message}"
+        error_message = f"Error with {error_root} | with {message}"
         logger.error(error_message)
         
         # Truyền lỗi trên Exception
