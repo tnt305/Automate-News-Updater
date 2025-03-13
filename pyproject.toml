@@ -13,7 +13,7 @@ pandas = "^2.2.3"
 numpy = "^2.0"
 tqdm = "^4.67.1"
 transformers = "^4.49.0"
-scrapy = "^2.12.0"
+scrapy = {version = "2.11.2", allow-prereleases = true}
 opencv-python = "^4.11.0.86"
 loguru = { version = "^0.7.3", allow-prereleases = true }
 accelerate = "0.29.0"
@@ -26,10 +26,11 @@ linkedin-api = "^2.3.1"
 bs4 = "^0.0.2"
 lxml = "^5.3.1"
 beautifulsoup4 = "^4.13.3"
+psycopg2 = "^2.9.10"
 
 [tool.poetry.group.dev.dependencies]
 tqdm = "^4.67.1"
-scrapy = "^2.12.0"
+scrapy = "^2.11.2"
 opencv-python = "^4.11.0.86"
 accelerate = "0.29.0"
 isort = "^6.0.1"
@@ -42,6 +43,7 @@ webdriver-manager = "^4.0.2"
 twikit = "^2.3.3"
 crawlee = {extras = ["playwright"], version = "^0.6.3"}
 bs4 = "^0.0.2"
+psycopg2 = "^2.9.10"
 
 [[tool.poetry.source]]
 name = "torch"
