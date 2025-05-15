@@ -15,7 +15,7 @@ tqdm = "^4.67.1"
 transformers = "^4.49.0"
 scrapy = {version = "2.11.2", allow-prereleases = true}
 opencv-python = "^4.11.0.86"
-loguru = { version = "^0.7.3", allow-prereleases = true }
+loguru = "0.7.2"
 accelerate = "0.29.0"
 pydantic = "^2.10.6"
 selenium = "^4.29.0"
@@ -27,6 +27,11 @@ bs4 = "^0.0.2"
 lxml = "^5.3.1"
 beautifulsoup4 = "^4.13.3"
 psycopg2 = "^2.9.10"
+aiohttp = "^3.11.14"
+asyncio = "^3.4.3"
+together = "^1.5.3"
+groq = "^0.20.0"
+cloudflare = "^4.1.0"
 
 [tool.poetry.group.dev.dependencies]
 tqdm = "^4.67.1"
@@ -44,6 +49,13 @@ twikit = "^2.3.3"
 crawlee = {extras = ["playwright"], version = "^0.6.3"}
 bs4 = "^0.0.2"
 psycopg2 = "^2.9.10"
+loguru = "0.7.2"
+chutes = "^0.2.30"
+aiohttp = "^3.11.14"
+asyncio = "^3.4.3"
+together = "^1.5.3"
+groq = "^0.20.0"
+cloudflare = "^4.1.0"
 
 [[tool.poetry.source]]
 name = "torch"
